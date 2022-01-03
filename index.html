@@ -1,64 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sophia's Personal Site</title>
-  </head>
-  <body style="background-color: #eaf6f6">
-    <table>
-      <tr>
-        <td>
-          <img
-            src="images/sophia.png"
-            alt="sophia profile picture"
-            width="200px"
-          />
-        </td>
-        <td>
-          <h1>Sophia Su</h1>
-          <p><em>Web and Mobile application developer</em></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h3>Portfolio</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Web development</td>
-        <td>
-          <ul>
-            <li>
-              <a href="https://www.pccareoptions.network64.com.au"
-                >PC Care OPtions</a
-              >
-            </li>
-            <li>
-              <a href="http://firefab.com.au/">Fire Fabrication Services</a>
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>Mobile development</td>
-        <td>
-          <ul>
-            <li>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.languageapp.voice_hand"
-                >Voice hand Japanese</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/watch?v=0IC7tNtoaac&ab_channel=PEI-JINSU"
-                >Service Booking Mobile Application</a
-              >
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-  </body>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="webtesting">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>webtesting</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=914273474');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
 </html>
